@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#cabecera{
+    text-align: center;
+}
+
+#cabecera img{
+    margin: 20px 0;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#presentacion, #cajaTexto, #botones{
+    text-align: center;
+    margin: 50px auto;
+}
+
+button{
+    font-size: 2em;
+    padding: 20px;
+    margin: 30px;
+}
+
+#cajaImagen{
+    margin: 0 auto;
+    text-align: center;
+}
