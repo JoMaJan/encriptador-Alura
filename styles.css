@@ -2,7 +2,14 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-
+body{
+    background-color: #0f1626;
+}
+.container{
+    margin: 0 15px;
+    
+}
+/*HEADER Y FOOTER-----------------------------------*/
 #cabecera{
     text-align: center;
 }
@@ -16,33 +23,81 @@ h1{
     font-size: 1.3em;
 }
 
-#presentacion, #cajaTexto, #botones, #cajaCodificado{
+/*MAIN----------------------------------------*/
+
+#presentacion, #cajaTexto, #botones{
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
-#cajaTexto{
-  display: grid;
-  grid-template-columns: 90% 10%;
+h1{
+    color: #ab987a;
+}
+h2, p{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 20px;
+    color: #ab987a;
 }
 
 #botonCopiar{
-  text-align: right;
+  position: absolute;
+  bottom: 50%px;
+  left: 89%;
 }
 
+#botonCopiar:hover{
+  scale: 1.3;
+}
+#botonCopiar:active{
+  background-color: #f5f5f5;
+}
 button{
-    font-size: 2em;
-    padding: 20px;
-    margin: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f5f5f5;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ff533d;
 }
 
-#linea{
-    display: none;
+textarea{
+    background-color: #ab987a;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 100%;
+    color:#0f1626
+
 }
 
-#cajaCodificado{
-    display: none;
-    transition: 2s all;
+#copy{
+    margin: 10px;
+}
+
+/**MEDIA QUERIES -------------------------------------------------------------*/
+
+@media screen and (min-width: 900px){
+
+  .container{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  p{
+    text-align: center;
+  }
+
+
+ #cajaTexto{
+  max-width: 900px;
+ }
+
+ #botonCopiar{
+  position:sticky;
+  background-color: #ab987a;
+ }
+
+
 }
 
 /* ----------------------------------------------

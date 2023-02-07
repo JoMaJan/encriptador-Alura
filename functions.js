@@ -1,3 +1,4 @@
+/*(?=a)*/
 
 document.getElementById('botonEncriptar').addEventListener('click', function() {
     let mensaje = document.getElementById("inputMensaje").value;
@@ -23,10 +24,6 @@ document.getElementById('botonCopiar').addEventListener('click', function() {
         textoCopiar = document.getElementById("inputMensaje").value;
         navigator.clipboard.writeText(textoCopiar);
 })
-
-
-
-
 
 
 
