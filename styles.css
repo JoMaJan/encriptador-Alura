@@ -66,6 +66,21 @@ textarea{
     margin: 10px;
 }
 
+/**MEDIA QUERIES -------------------------------------------------------------*/
+
+@media screen and (min-width: 940px){
+
+  .container{
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  p{
+    text-align: center;
+  }
+
+}
+
 
 
 /* ----------------------------------------------
