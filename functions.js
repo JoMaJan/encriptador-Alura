@@ -1,4 +1,4 @@
-
+/*(?=a)*/
 
 document.getElementById('botonEncriptar').addEventListener('click', function() {
     let mensaje = document.getElementById("inputMensaje").value;
