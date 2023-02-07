@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-        <script src="functions.js"></script>
+        <script src="functions.js" defer="defer"></script>
     
 </head>
 <body>
@@ -30,18 +30,19 @@
             </div>
 
             <div id="cajaTexto">
-                <textarea cols="63" rows="10" placeholder="Escriba aquí su mensaje..." id="inputMensaje"></textarea>
+                <div>
+                    <textarea cols="63" rows="10" placeholder="Escriba aquí su mensaje..." id="inputMensaje"></textarea>
+                </div>
+                <div>
+                <img src="Imagenes/icons8-clone-figure-24(-mdpi).png" id="botonCopiar"></img>
+                </div>
             </div>
 
-            <div id="cajaCodificado">
-                <textarea cols="63" rows="10" id="inputMensaje2"></textarea>
-            </div>
-
-
+           
 
             <div id="botones">
-                <button id="botonEncriptar" onclick="encriptar()";>Encriptar</button>
-                <button id="botonDesencriptar" onclick="desencriptar()";>Desencriptar</button>                
+                <button type="button" id="botonEncriptar">Encriptar</button>
+                <button type="button" id="botonDesencriptar">Desencriptar</button>                
             </div>
 
         </div>

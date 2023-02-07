@@ -21,6 +21,15 @@ h1{
     margin: 50px auto;
 }
 
+#cajaTexto{
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+#botonCopiar{
+  text-align: right;
+}
+
 button{
     font-size: 2em;
     padding: 20px;
