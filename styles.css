@@ -99,6 +99,14 @@ textarea{
   margin-bottom: 10px;
 }
 
+#icono{
+  color: #ab987a;
+}
+
+#icono a{
+  color: #ab987a;
+}
+
 /**MEDIA QUERIES -------------------------------------------------------------*/
 
 @media screen and (min-width: 900px){
