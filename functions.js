@@ -1,3 +1,9 @@
+
+window.onload = function(){
+    document.getElementById("inputMensaje").focus();
+}
+
+
 /* function para encriptar el mensaje al presionar el boton encriptar*/
 
 document.getElementById('botonEncriptar').addEventListener('click', function() {
