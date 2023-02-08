@@ -40,9 +40,19 @@ h2, p{
     color: #ab987a;
 }
 
+#cajaBoton{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 #botonCopiar{ 
   filter: invert(100%);
   margin-bottom: 20px;
+}
+
+#div2{
+  text-align: right;
+  filter: invert(100%);
 }
 
 #botonCopiar:hover{

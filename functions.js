@@ -30,24 +30,27 @@ document.getElementById('botonCopiar').addEventListener('click', function() {
         navigator.clipboard.writeText(textoCopiar);
 })
 
+/* function para refrescar la caja texto */
+
+document.getElementById('botonLimpiar').addEventListener('click', function() {
+        document.getElementById("inputMensaje").value = "";
+        document.getElementById("inputMensaje").focus();
+
+})
+
+
 /* function para validar que no haya mayusculas*/
 
-
 function validar(x){
-    for(var index = 0; index < x.length; index++){
-        var letraActual = x.charAt(index);
-        var espacio = " ";
-        if((esMayuscula(letraActual)) && (letraActual != espacio)){
+    for(var i=0;i<x.length;i++){
+        var letraActual = x.charAt(i);
+        var mayuscula = /[A-Z]/g;;
+        var validacion = x.match(mayuscula);
+        if( letraActual == validacion){
             alert("Ingresó una letra mayúscula, recuerde usar solo letras minúsculas.");
             location.reload();
-        }
+            break;
+        }        
     }
 }
-
-function esMayuscula(letra){
-    return letra == letra.toUpperCase();
-}
-
-
-
 
